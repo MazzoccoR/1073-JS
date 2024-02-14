@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 html{
     /* background-color: rgb(221, 221, 20); */
     font-size: 1.5em;
@@ -62,69 +61,4 @@ button{
 }
 #choosenStudent{
     color: rgb(255, 0, 0);
-=======
-html{
-    /* background-color: rgb(221, 221, 20); */
-    font-size: 1.5em;
-    background-image: url("../images/yellowBack.jpg");
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-attachment: fixed;
-    text-align: center;
-}
-#main{
-    float: left;
-}
-#side{
-    float: right;
-}
-#student :last-child{
-    display: inline-block;
-}
-button{
-    font-size: .9em;
-    padding: 0.3em;
-    margin: 0.3em;
-    border-radius: 0.5em;
-    border: none;
-    cursor: pointer;
-}
-#noun1{ 
-    background-color: rgb(210, 18, 210);
-}
-#choosenNoun1{
-    color: rgb(210, 18, 210);
-}
-#verb{
-    background-color: rgb(18, 210, 210);
-}
-#choosenVerb{
-    color: rgb(18, 210, 210);
-}
-#adjective{
-    background-color: rgb(18, 210, 18);
-}
-#choosenAdjective{
-    color: rgb(18, 210, 18);
-}
-#noun2{
-    background-color: rgb(210, 165, 18);
-}
-#choosenNoun2{
-    color: rgb(210, 165, 18);
-}
-#setting{
-    background-color: rgb(210, 18, 98);
-}#choosenSetting{
-    color: rgb(210, 18, 98);
-}
-#playback{
-    background-color: rgb(242, 36, 36);
-}
-#random{
-    background-color: rgb(53, 134, 134);
-}
-#choosenStudent{
-    color: rgb(255, 0, 0);
->>>>>>> 849d7a546ccd24b11e6f540939b593b2cbce389f
 }
