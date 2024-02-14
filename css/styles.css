@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 html{
     background-color: #323330;
     font-family: 'Roboto', sans-serif;
@@ -19,4 +20,27 @@ p a{
 a:hover{
     color: #f0db4f;
     transition: all .4s ease-out;
+=======
+html{
+    background-color: #323330;
+    font-family: 'Roboto', sans-serif;
+}
+h1{
+    text-align: center;
+}
+h1, h2{
+    color: #ecd227;
+    font-size: 2.5em;
+}
+p{
+    font-size: 1.5em;
+}
+p a{
+    color: #f4f4f4;
+    text-decoration: none;
+}
+a:hover{
+    color: #f0db4f;
+    transition: all .4s ease-out;
+>>>>>>> 849d7a546ccd24b11e6f540939b593b2cbce389f
 }
