@@ -1,0 +1,12 @@
+html{
+    text-align: center;
+}
+button{
+    background-color: transparent;
+    border-radius: 80px;
+    margin: 8px;
+}
+#images{
+    width: 50%;
+    height: 50%;
+}
