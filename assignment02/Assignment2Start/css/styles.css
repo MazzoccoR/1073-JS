@@ -1,5 +1,8 @@
 html{
     text-align: center;
+    font-size: 1em;
+    color: black;
+    text-shadow: 1px 1px 1px white;
 }
 button{
     background-color: transparent;
@@ -7,6 +10,7 @@ button{
     margin: 8px;
 }
 #images{
-    width: 50%;
-    height: 50%;
+    margin-top: 20px;
+    width: 200px;
+    height: auto;
 }

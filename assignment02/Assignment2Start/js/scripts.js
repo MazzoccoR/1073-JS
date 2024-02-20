@@ -10,6 +10,7 @@ var imgSet;
 
 // function to change bg color from user input and add student id
 function changeCustomColor(inputNum) {
+    custNum.value = inputNum;
     if(inputNum === undefined){
         inputNum = parseInt(custNum.value);
     }
@@ -73,6 +74,8 @@ function changeImage() {
         images.src = '';
         images.alt = '';
     }
+    imagSelect.value=selectedImage.alt;
+
     addList();
 }
 // event listeners for on click event of buttons and select
