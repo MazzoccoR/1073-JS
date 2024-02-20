@@ -1,16 +1,16 @@
 // constants for query selector
-var studentId = document.querySelector('#myStudentId');
+const studentId = document.querySelector('#myStudentId');
 const custNum = document.querySelector('#customNumber');
 const customColorButton = document.querySelector('.custColor');
 const randomColor= document.querySelector('.randColor');
 const imagSelect = document.querySelector('#imageSelect');
 const images = document.querySelector('#images');
-var bg = document.querySelector('html');
+const bg = document.querySelector('html');
 var imgSet;
 
 // function to change bg color from user input and add student id
 function changeCustomColor(inputNum) {
-    custNum.value = inputNum;
+    custNum.value = inputNum;//here to indicate the number of the random number
     if(inputNum === undefined){
         inputNum = parseInt(custNum.value);
     }
@@ -33,8 +33,8 @@ function changeCustomColor(inputNum) {
     else if(inputNum <=100){
         bg.style.backgroundColor = 'yellow';
     }
-    else{//this should not happen but is here to test the code. This will happen if the input is not a number
-        bg.style.backgroundColor = 'black';
+    else{//This will happen if the input is not a number
+        bg.style.backgroundColor = 'red';
     }
 }
 // function to change bg color from random no.
@@ -74,7 +74,7 @@ function changeImage() {
         images.src = '';
         images.alt = '';
     }
-    imagSelect.value=selectedImage.alt;
+    imagSelect.value=selectedImage.alt;//updates the text of the select list to the selected image
 
     addList();
 }
