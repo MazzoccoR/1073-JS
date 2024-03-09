@@ -1,0 +1,14 @@
+html{
+    background-color: aqua;
+    font-size: 1.5em;
+    font-family: 'Arial', sans-serif;
+    color: white;
+    text-shadow: 2px 1px 5px #fffb00;
+    text-align: center;
+}
+img{
+    height: 150px;
+    width: auto;
+    border-radius: 10%; 
+    border:solid 5px plum;   
+}
