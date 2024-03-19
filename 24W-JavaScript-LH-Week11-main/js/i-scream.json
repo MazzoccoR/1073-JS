@@ -8,11 +8,11 @@
         "calories": 200,
         "type": "ice-cream",
         "ingredients": ["Chocolate Syrup", "Pepperment Sprinkles", "Vanilla Base"],
-        "image":"../images/chocolate-mint.svg"
+        "image":"https://mazzoccor.github.io/1073-JS/24W-JavaScript-LH-Week11-main/images/chocolate-mint.svg"
     },{"name": "Peach Mango",
     "calories": 250,
     "type": "milkshake-type ice-cream",
     "ingredients": ["Peach Syrup", "Mango Chunks", "Vanilla Base"],
-    "image":"../images/chocolate-mint.svg"
+    "image":"https://mazzoccor.github.io/1073-JS/24W-JavaScript-LH-Week11-main/images/peach-mango.svg"
     }]
 }
