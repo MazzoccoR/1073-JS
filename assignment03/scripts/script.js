@@ -3,8 +3,6 @@ const summaryTitle = document.getElementById('finished');
 const doneButton = document.getElementById('submit');
 let stuNum = document.getElementById('studNum');
 let studName= document.getElementById('studName');
-studName.innerHTML = "Rbecca Mazzocco";
-studNum.innerHTML = "LU: 1218195 GC:200560972";
 
 document.addEventListener('DOMContentLoaded', function(){
     
@@ -22,7 +20,8 @@ document.addEventListener('DOMContentLoaded', function(){
                 this.toppings="without toppings";
             }
             else{this.toppings=this.toppings.join(", ");}
-            summary.textContent = `A ${this.size} pizza with ${this.crust} crust and ${this.toppings} toppings is ready for ${this.name}`;
+            summary.textContent = `A ${this.size} pizza with ${this.crust} crust and ${this.toppings} toppings is ready for ${this.name}`;studName.innerHTML = "Rbecca Mazzocco";
+studNum.innerHTML = "LU: 1218195 GC:200560972";
         }
     }
     let mazzPizza= new Pizza();
