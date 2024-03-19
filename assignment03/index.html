@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Assignment 03</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <script src="scripts/script.js" defer></script>
+</head>
+<body>
+    <h4>Student ID</h4>
+    <p id="studNum">Student ID</p>
+    <h4><br>Student Name</h4>
+    <p id="studName">Student Name</p>
+    <h1>Pizza Maker</h1>
+    <p>Choose your pizza size:</p>
+    <label for="size">Size of pizza</label>
+    <select id="size" name="size">
+        <option value="small">Small</option>
+        <option value="medium">Medium</option>
+        <option value="large">Large</option>
+    </select>
+
+    <label for="crust"><br>Choose your pizza crust:</label>
+    <select id="crust" name="crust">
+        <option value="thin">Thin</option>
+        <option value="thick">Thick</option>
+        <option value="stuffed">Stuffed</option>
+    </select>
+    <label class="toppings"><br>Choose your pizza toppings:</label>
+    <input type="checkbox" id="pepperoni" name="pepperoni" value="pepperoni">
+    <label for="pepperoni">Pepperoni<br></label>
+    <input type="checkbox" id="sausage" name="sausage" value="sausage">
+    <label for="sausage">Sausage<br></label>
+    <input type="checkbox" id="mushrooms" name="mushrooms" value="mushrooms">
+    <label for="mushrooms">Mushrooms<br></label>
+    <input type="checkbox" id="onions" name="onions" value="onions">
+    <label for="onions">Onions<br></label>
+    <input type="checkbox" id="peppers" name="peppers" value="peppers">
+    <label for="peppers">Peppers<br></label>
+    <input type="checkbox" id="olives" name="olives" value="olives">
+    <label for="olives">Olives<br></label>
+    <input type="checkbox" id="anchovies" name="anchovies" value="anchovies">
+    <label for="anchovies">Anchovies<br></label>
+
+    <label for="name">Name:</label>
+    <input type="text" id="name" name="name">	
+    <p></p>
+
+    <button type="submit" id="submit">Order Pizza</button>
+    <h1 id="finished"></h1>
+    <p id="done"></p>
+
+</body>
+</html>
