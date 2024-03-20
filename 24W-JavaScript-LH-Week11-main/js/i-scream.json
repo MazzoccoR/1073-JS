@@ -19,6 +19,18 @@
     "calories": 300,
     "type": "milkshake-type ice-cream",
     "ingredients": ["Strwbarry Syrup", "Sprinkles", "Vanilla Base"],
-    "image":"https://mazzoccor.github.io/1073-JS/24W-JavaScript-LH-Week11-main/images/strawberry-sprinkles.svg"
+    "image":"https://mazzoccor.github.io/1073-JS/24W-JavaScript-LH-Week11-main/images/strawberry-sprinkle.svg"
+    },
+    {"name": "Pistachio Pokadots",
+    "calories": 234,
+    "type": "saurbet-type ice-cream",
+    "ingredients": ["Pistachio Syrup", "Pokadots", "Vanilla Base"],
+    "image":"https://mazzoccor.github.io/1073-JS/24W-JavaScript-LH-Week11-main/images/ice-cream-xtra1.svg"
+    },
+    {"name": "Cookie Dough",
+    "calories": 974,
+    "type": "ice-cream",
+    "ingredients": ["Chocolate Syrup", "Cookie dough", "Vanilla Base"],
+    "image":"https://mazzoccor.github.io/1073-JS/24W-JavaScript-LH-Week11-main/images/ice-cream-xtra2.svg"
     }]
 }
