@@ -39,7 +39,7 @@ async function fetchData(){
 		const intelligence=document.createElement('p');
 		const strength=document.createElement('p');
 		const speed=document.createElement('p');
-		const aliasses=document.createElement('p');
+		const goodBad=document.createElement('p');
 		const madeBy=document.createElement('p');
 		const image=document.createElement('img');
 		
@@ -48,7 +48,7 @@ async function fetchData(){
 		intelligence.textContent=`Intelligence: ${result.powerstats.intelligence}`;
 		strength.textContent=`Strength: ${result.powerstats.strength}`;
 		speed.textContent=`Speed: ${result.powerstats.speed}`;
-		aliasses.textContent=`Aliasses: ${result.biography.aliases}`;
+		goodBad.textContent=`Alignment: ${result.biography.alignment}`;
 		madeBy.textContent=`Made by: ${result.biography.publisher}`;
 		image.src=`https://cdn.rawgit.com/akabab/superhero-api/0.2.0/api/images/${size.value}/${result.slug}.jpg`;
 		image.alt=result.name;
@@ -58,7 +58,7 @@ async function fetchData(){
 		supperInfo.appendChild(intelligence);
 		supperInfo.appendChild(strength);
 		supperInfo.appendChild(speed);
-		supperInfo.appendChild(aliasses);
+		supperInfo.appendChild(goodBad);
 		supperInfo.appendChild(madeBy);
 		supperInfo.appendChild(image);
 		
