@@ -1,97 +1,73 @@
-const url = 'https://mashape-community-urban-dictionary.p.rapidapi.com/define?term=wat';
-const options = {
-	method: 'GET',
-	headers: {
-		'X-RapidAPI-Key': '00e595db80mshd049170895809cep161b91jsn55593ddd528a',
-		'X-RapidAPI-Host': 'mashape-community-urban-dictionary.p.rapidapi.com'
+//https://rapidapi.com/jakash1997/api/superhero-search
+//it is from rapidapi and did not realy have a documentation page but with the code snippet, example responses and results did what the documentation would do
+//also got the sourse code (strt with try catch) from the code snippet
+let base='https://superhero-search.p.rapidapi.com/api/?hero=';
+
+let url;
+
+// Get info from user
+const studentInfo = document.getElementById('student-info');
+const searchBtt=document.getElementById('searchBtt');
+const hero=	document.getElementById('search-input');
+const supperInfo=document.getElementById('superhero-info');
+const size=document.getElementById('image-size');
+
+// Replace the content with your student ID and name
+async function fetchData(){
+	//from the code snippet
+	const options = {
+		method: 'GET',
+		headers: {
+			'X-RapidAPI-Key': '00e595db80mshd049170895809cep161b91jsn55593ddd528a',//key (do not replicate or over use plase!)
+			'X-RapidAPI-Host': 'superhero-search.p.rapidapi.com'//from source code - connect to the host
+		}
+	};
+	try {
+		//check if the user entered a superhero name
+		if(hero.value===''){
+			supperInfo.textContent='Please enter a superhero name';
+			return;
+		}
+		studentInfo.textContent = 'Student ID: 200560972 | Name: Rebecca Mazzocco';
+		supperInfo.textContent='';//clear the previous search
+		const url = `${base}${hero.value}`;//get full url to for the fetch
+		const response = await fetch(url, options);
+		const result=await response.json();
+		console.log(result);//just to see what is in the result in console
+		//create the elements that will hold the info
+		const name=document.createElement('h2');
+		const intelligence=document.createElement('p');
+		const strength=document.createElement('p');
+		const speed=document.createElement('p');
+		const aliasses=document.createElement('p');
+		const madeBy=document.createElement('p');
+		const image=document.createElement('img');
+		
+		//get info from the result(api)
+		name.textContent=result.name;
+		intelligence.textContent=`Intelligence: ${result.powerstats.intelligence}`;
+		strength.textContent=`Strength: ${result.powerstats.strength}`;
+		speed.textContent=`Speed: ${result.powerstats.speed}`;
+		aliasses.textContent=`Aliasses: ${result.biography.aliases}`;
+		madeBy.textContent=`Made by: ${result.biography.publisher}`;
+		image.src=`https://cdn.rawgit.com/akabab/superhero-api/0.2.0/api/images/${size.value}/${result.slug}.jpg`;
+		image.alt=result.name;
+
+		//add all the info to the page through the supperInfo div
+		supperInfo.appendChild(name);
+		supperInfo.appendChild(intelligence);
+		supperInfo.appendChild(strength);
+		supperInfo.appendChild(speed);
+		supperInfo.appendChild(aliasses);
+		supperInfo.appendChild(madeBy);
+		supperInfo.appendChild(image);
+		
+	} catch (error) {
+		console.error(error);
+		supperInfo.innerHTML = `<h2>Hero not found</h2>`;
 	}
-};
-try {
-	const response = await fetch(url, options);
-	const result = await response.text();
-	console.log(result);
-} catch (error) {
-	console.error(error);
 }
-// // The URL for the Article Search API at nytimes.com
-// const baseURL = 'https://mashape-community-urban-dictionary.p.rapidapi.com/define?term=wat';
-// // STEP 1: Get your own API key and paste it below…
-// const key = 'ajHuiZdBc3J89usJJyWocrCGnSFPDfPW';
-// let url;
-// // Grab references to all the DOM elements you'll need to manipulate
-// const searchTerm = document.querySelector('.search');
-// const startDate = document.querySelector('.start-date');
-// const endDate = document.querySelector('.end-date');
-// const searchForm = document.querySelector('form');
-// const submitBtn = document.querySelector('.submit');
-// const section = document.querySelector('section');
-// // STEP 2: Add a submit event listener for the search form, 
-// //referencing the fetchResults function as the callback
-// submitBtn.addEventListener("click", fetchResults);
-
-// // Functions
-// function fetchResults(event) {
-//     // Use preventDefault() to stop the form submitting
-//     event.preventDefault();
-//     // STEP 3: Assemble the full URL, according to the API documentation at the New York Times
-//     url=`${baseURL}?q=${searchTerm.value}&api-key=${key}`;
-//     if(startDate.value !==""){
-//         url += '&begin_date=' + startDate.value;
-//     }
-//     if(endDate.value !==""){
-//         url+= '&end_date=' + endDate.value;
-
-//     }
-//     console.log(url);
-//     // STEP 4: Use fetch() to pass the URL that we built as a request to the API service, 
-//     //then pass the JSON to the displayResults() function
-//     fetch(url).then(response => {
-//         return response.json();
-//     }).then(json => displayResults(json));
-// };
-
-// function displayResults(json) {
-//     // STEP 5: Log to the console the results from the API
-//     console.log(json);
-
-//     // Clear out the old results…
-//     while (section.firstChild) {
-//         section.removeChild(section.firstChild);
-//     };
-//     // STEP 6: Create the variable articles to capture the articles from the JSON object
-//     let articles=json.response.docs;
-
-//     if (articles.length === 0) {
-//         const para = document.createElement('p');
-//         para.textContent = 'No results returned.'
-//         section.appendChild(para);
-//     } else {
-//         for (let i = 0; i < articles.length; i++) {
-//             const article = document.createElement('article');
-//             const heading = document.createElement('h2');
-//             const link = document.createElement('a');
-//             const img = document.createElement('img');
-//             const para1 = document.createElement('p');
-
-//             const current = articles[i];
-//             console.log(current);
-//             // STEP 7: Look at the console output from the API…
-//             link.href = current.web_url;
-//             link.textContent = current.headline.main;
-//             para1.textContent = current.snippet;
-
-//             if (current.multimedia.length > 0) {
-//                 img.src = 'https://www.nytimes.com/' + current.multimedia[0].url;
-//                 img.alt = current.headline.main;
-//             };
-//             // STEP 8: Put each article together as an ARTICLE element and append it as a child of the SECTION element in the HTML
-//             article.appendChild(heading);
-//             heading.appendChild(link);
-//             article.appendChild(img);
-//             article.appendChild(para1);
-//             section.appendChild(article);
-//         };
-//     };
-// };
-
-// // This example adapted from "Third-party APIs" at https://developer.mozilla.org/en-US/docs/Learn/JavaScript/Client-side_web_APIs/Third_party_APIs
+window.onload = async function(){
+	await fetchData();
+}
+searchBtt.addEventListener('click', fetchData);//when the search button is clicked, get the data

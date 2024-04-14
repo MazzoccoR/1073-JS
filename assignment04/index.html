@@ -1,27 +1,26 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
-	<meta charset="utf-8" />
-	<title>---- api</title>
-	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link href="css/styles.css" rel="stylesheet" />
-	<script src="scripts/script.js" defer></script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Superhero Search Demo</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <script src="scripts/script.js" defer></script>
 </head>
-
 <body>
-	<h1>-----</h1>
-	<form>
-		<label for="verse-choose">Choose a very cool verse</label>
-		<select id="verse-choose" name="verse-choose">
-			<option value="verse1" selected>Verse 1</option>
-			<option value="verse2">Verse 2</option>
-			<option value="verse3">Verse 3</option>
-			<option value="verse4">Verse 4</option>
-		</select>
-	</form>
-	<pre>
-	</pre>
+    <p id="student-info"></p>
+	<div id="search-info">
+		<input type="text" id="search-input" placeholder="Enter user id">
+		<select id="image-size">
+            <option value="xs">Extra Small</option>
+            <option value="sm">Small</option>
+            <option value="md">Medium</option>
+            <option value="lg">Large</option>
+        </select>
+        <button id="searchBtt">Search</button>
+	</div>
+    <div id="superhero-info">
+        <!-- Superhero information will be dynamically added here -->
+    </div>
 </body>
-
 </html>

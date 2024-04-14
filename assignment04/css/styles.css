@@ -1,0 +1,9 @@
+/* make baground balck, text and image outline white */
+html{
+    color:white;
+    background-color: black;
+    font-family: 'Arial', sans-serif;
+}
+img{
+    border: 2px solid white;
+}
