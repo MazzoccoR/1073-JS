@@ -22,12 +22,12 @@ async function fetchData(){
 			'X-RapidAPI-Host': 'superhero-search.p.rapidapi.com'//from source code - connect to the host
 		}
 	};
-	try {
-		//check if the user entered a superhero name
+	try {//try to get hero info
+		//if they dont enter anything
 		if(hero.value===''){
 			supperInfo.textContent='Please enter a superhero name';
 			return;
-		}
+		}		//check if the user entered a superhero name
 		studentInfo.textContent = 'Student ID: 200560972 | Name: Rebecca Mazzocco';
 		supperInfo.textContent='';//clear the previous search
 		const url = `${base}${hero.value}`;//get full url to for the fetch
@@ -62,12 +62,9 @@ async function fetchData(){
 		supperInfo.appendChild(madeBy);
 		supperInfo.appendChild(image);
 		
-	} catch (error) {
+	} catch (error) {//get error message if hero is not found
 		console.error(error);
 		supperInfo.innerHTML = `<h2>Hero not found</h2>`;
 	}
-}
-window.onload = async function(){
-	await fetchData();
 }
 searchBtt.addEventListener('click', fetchData);//when the search button is clicked, get the data
