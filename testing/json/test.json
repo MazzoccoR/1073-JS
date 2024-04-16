@@ -1,0 +1,130 @@
+{
+    "recepies":[
+        {
+            "name": "Chocolate Cake",
+            "ingredients": [
+                "1 tsp salt",
+                "3 cups flour",
+                "2 cups sugar",
+                "½ cup cocoa",
+                "2 tsp baking soda",
+                "¾ oil",
+                "2 cups water",
+                "2 tsp vanilla",
+                "2 tbsp vinegar"
+            ],
+            "instructions": [
+                "Preheat oven to 350oF",
+                "Mix all ingredients together until well mixed",
+                "Place in 8x8\" or 11x13\" pan",
+                "Bake for 30-40 minutes"
+            ],
+            "Notes":[]
+        },
+        {
+            "name": "Shortbread",
+            "from":"Mona Shaw",
+            "ingredients": [
+                "1 cup butter",
+                "½ cup cornstarch",
+                "½ cup icing sugar",
+                "½ tsp salt",
+                "2 cups sifted all-purpose flour"
+            ],
+            "instructions": [
+                "Soften butter",
+                "Cream butter",
+                "Sift dry ingredients 3 times",
+                "Add butter a little at a time to dry ingredients",
+                "Work mixture for a long time",
+                "Put onto floured counter and knead until cracked",
+                "If too short, roll with waxed paper on top",
+                "Roll to thickness of ¼ inch",
+                "Bake 3400 for 10 min."
+            ],
+            "Notes":[]
+        },
+        {
+            "name": "Rum cake",
+            "from":"Paula",
+            "ingredients": [
+                "1 cup chopped pecans or walnuts",
+                "1 yellow cake mix or make your own",
+                "1 package vanilla instant pudding","mix or 3 tbsp Birds eye custard",
+                "4 eggs",
+                "½ cup water",
+                "½ cup oil",
+                "½ - ⅔ cup Amber Rum",
+                "¼ lb sweet butter",
+                "¼ cup water",
+                "1 cup white sugar",
+                "½ - ⅔ c Amber Rum"
+            ],
+            "instructions": [
+                "Preheat oven to 3250, grease and flour tube or bundt pan",
+                "Sprinkle chopped nuts over bottom of pan",
+                "Mix all cake ingredients together",
+                "Pour batter over nuts",
+                "Bake 1 hour or until done",
+                "Cool inverted on surviving plate",
+                "Prick top to allow cake to absorb glaze",
+                "To make glaze, melt butter in saucepan, stir in water and sugar",
+                "Boil 5 minutes stirring constantly",
+                "Remove from heat & stir in rum",
+                "Keep feeding cake until all glaze is used up."
+            ],
+            "Notes":[
+                "Keep in fridge 1 week covered",
+                "DO NOT FREEZE"
+            ]
+        },{
+            "name": "Baked Onion Soup",
+            "from":"Milk Calendar",
+            "ingredients": [
+                "2 tbsp butter",
+                "2 large onions sliced",
+                "1 tbs. sugar",
+                "2 tbsp flour",
+                "3 cup beef stock",
+                "2 cup milk",
+                "1 tsp brandy (optional)",
+                "2 cup swiss cheese grated",
+                "1 narrow French stick",
+                "3 tbsp soft butter",
+                "1 clove garlic minced",
+                "3 tbsp grated parmesan cheese",
+                "1 tsp oregano"
+            ],
+            "instructions": [
+                "Melt butter in large pot, add onions ー cook until softened",
+                "Stir in sugar and flour ーcook till brown (about 5 mins)",
+                "Gradually stir in stock and milk",
+                "Simmer 20 min",
+                "While simmering, make croutons",
+                "Slice bread ½ “ slices",
+                "Combine remaining ingredients",
+                "Spread on bread",
+                "Bake 3500 F (1800 C) cover until crisp ",
+                "Add brandy to soup ",
+                "Season to taste",
+                "Pour into ovenproof soup bowls",
+                "Top with parmesan croutons add swiss cheese",
+                "Bake in 3500F oven until cheese has melted ～ 10 min"
+            ],
+            "Notes":[
+                "Prep time: 10 min",
+                "Cooking time: 30 min",
+                "Servs 4"
+            ]
+        },{
+            "name": "",
+            "ingredients": [
+                ""
+            ],
+            "instructions": [
+                ""
+            ],
+            "Notes":""
+        }
+    ]
+}
